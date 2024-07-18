@@ -4,22 +4,23 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>TrigoPy</title>
+        <script src="script.js"></script>
     </head>
     <body>
         <h1>Trigonometria!</h1>
         <br>
         <form id="myForm">
-            <label for="input1">Sinus:</label>
+            <label for="input1">Sinus: (Incognita = 0)</label>
             <input type="number" step="any" id="input1" name="input1"><br>
     
-            <label for="input2">Cosinus:</label>
+            <label for="input2">Cosinus: (Incognita = 0)</label>
             <input type="number" step="any" id="input2" name="input2"><br>
     
-            <label for="input3">Tangente:</label>
+            <label for="input3">Tangente: (Incognita = 0)</label>
             <input type="number" step="any" id="input3" name="input3"><br>
     
-            <button type="button" onclick="getInputValues()">Submit</button>
+            <button type="button" onclick="getInputValues(), maths()">Submit</button>
         </form>
-        <script src="script.js"></script>
+        <div id="result"></div> 
     </body>
 </html>
